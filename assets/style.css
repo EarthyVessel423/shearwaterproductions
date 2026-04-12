@@ -16,7 +16,12 @@ body {
 /* MAIN CONTENT COLUMN */
 .main {
   width: 900px;
-  background: red;   /* TEMP TEST */
+  background: #1a1a1a;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+
+  margin-top: 40px;   
 }
 
 /* HEADER */
