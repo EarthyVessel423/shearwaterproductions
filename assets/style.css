@@ -15,11 +15,8 @@ body {
 
 /* MAIN CONTENT COLUMN */
 .main {
-  width: 900px;              /* controls how narrow the site is */
-  background: #1a1a1a;       /* slightly lighter than background */
-  min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
+  width: 900px;
+  background: red;   /* TEMP TEST */
 }
 
 /* HEADER */
