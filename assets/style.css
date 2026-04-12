@@ -11,22 +11,19 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 40px;   
+  padding-top: 40px;
 }
 
 /* MAIN CONTENT COLUMN */
 .main {
-  width: 100%;
-  max-width: 1200px;
+  width: 1200px;
+  max-width: calc(100% - 40px);
   background: #1a1a1a;
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-
-  margin-top: 40px;
-
-  border-radius: 8px;              /* soft corners */
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);  /* subtle depth */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 /* HEADER */
