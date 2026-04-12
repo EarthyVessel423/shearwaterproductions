@@ -16,7 +16,7 @@ body {
 
 /* MAIN CONTENT COLUMN */
 .main {
-  width: 1300px;
+  width: 1200px;
   max-width: calc(100% - 40px);
   background: #1a1a1a;
   min-height: 100vh;
