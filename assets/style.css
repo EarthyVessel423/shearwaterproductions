@@ -50,7 +50,7 @@ body {
 
 .brand h1 {
   margin: 0;
-  font-size: 2.6rem;   /* 👈 bigger title */
+  font-size: 2.3rem;   /* 👈 bigger title */
   white-space: nowrap;
 }
 
@@ -71,7 +71,7 @@ body {
 .nav-menu a {
   color: white;
   text-decoration: none;
-  font-size: 1.4rem;   /* 👈 bigger nav text */
+  font-size: 1.8rem;   /* 👈 bigger nav text */
   font-weight: 500;
 }
 
