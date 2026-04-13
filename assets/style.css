@@ -123,3 +123,43 @@ body {
   border-radius: 20px;
   display: block;
 }
+/* BUTTON SECTION */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+/* BASE BUTTON STYLE */
+.btn {
+  padding: 18px 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+/* COLORS */
+.btn-blue {
+  background: #2d5aa3;
+  color: white;
+}
+
+.btn-green {
+  background: #3c7d3c;
+  color: white;
+}
+
+.btn-red {
+  background: #a33c3c;
+  color: white;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
