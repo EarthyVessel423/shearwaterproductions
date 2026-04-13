@@ -83,7 +83,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 40px;
+  gap: 60px;                /* 👈 more space between text and image */
+  
+  padding: 40px 20px;      /* 👈 pushes content inward from edges */
+  
   margin-bottom: 40px;
   min-height: 380px;
 }
