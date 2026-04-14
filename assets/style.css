@@ -247,6 +247,7 @@ body {
 .news-row .news-text {
   text-align: right;
   margin-left: auto;   /* pushes it right */
+  margin-right: 40px;   /* 👈 pulls it LEFT slightly */
 }
 .news-row.reverse .news-text {
   text-align: left;
