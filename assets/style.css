@@ -193,3 +193,51 @@ body {
 
   opacity: 0.6;     /* 👈 softer look */
 }
+/* NEWS SECTION */
+.news-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* NEWS TITLE */
+.news-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* EACH ROW */
+.news-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* REVERSED ROW */
+.news-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGES */
+.news-image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.news-text {
+  max-width: 500px;
+}
+
+.news-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.news-text p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
