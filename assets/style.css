@@ -253,7 +253,3 @@ body {
   text-align: left;
   margin-right: auto;   /* pushes it left */
 }
-.news-row,
-.news-row.reverse {
-  padding: 0 40px;
-}
