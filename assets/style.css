@@ -191,14 +191,14 @@ body {
   margin: 40px 0;   /* 👈 smaller spacing */
   width: 100%;
 
-  opacity: 0.6;     /* 👈 softer look */
+  opacity: 0.8;     /* 👈 softer look */
 }
 .section-divider mini {
   border: none;
   border-top: 1px solid #333;
 
-  margin: 40px 0;   /* 👈 smaller spacing */
-  width: 80%;
+  margin: 20px 0;   /* 👈 smaller spacing */
+  width: 100%;
 
   opacity: 0.6;     /* 👈 softer look */
 }
