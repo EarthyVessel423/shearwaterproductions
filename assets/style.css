@@ -233,12 +233,19 @@ body {
 }
 
 .news-text h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
 .news-text p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #ccc;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+.news-row .news-text {
+  text-align: right;
+}
+.news-row.reverse .news-text {
+  text-align: left;        /* normal reading direction */
+  margin-left: 40px;       /* pushes it right */
 }
