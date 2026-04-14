@@ -229,7 +229,8 @@ body {
 
 /* TEXT */
 .news-text {
-  max-width: 500px;
+  flex: 1;
+  max-width: 600px;   /* increase from smaller value */
 }
 
 .news-text h3 {
@@ -244,8 +245,9 @@ body {
 }
 .news-row .news-text {
   text-align: right;
+  margin-left: auto;   /* pushes it right */
 }
 .news-row.reverse .news-text {
-  text-align: left;        /* normal reading direction */
-  margin-left: 40px;       /* pushes it right */
+  text-align: left;
+  margin-right: auto;   /* pushes it left */
 }
