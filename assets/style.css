@@ -210,7 +210,7 @@ body {
 /* EACH ROW */
 .news-row {
   display: flex;
-  align-items: center;
+
   gap: 40px;
   justify-content: space-between;
 }
