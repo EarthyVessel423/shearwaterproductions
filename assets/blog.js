@@ -2,43 +2,43 @@ const POSTS_PER_PAGE = 4;
 
 const blogPosts = [
   {
-    title: "First Production Update",
-    date: "March 1, 2026",
+    title: "Example Post 1",
+    date: "April 9, 2026",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
-    previewText: "This is the first production update. Replace this with the opening text of your real blog post. This text can be longer than 350 characters because the script will automatically shorten it for the blog page preview. When a visitor clicks the title, they will open the full post page and read the complete version there.",
+    previewText: "This is the preview text of a post that goes on a half-post.",
     link: "posts/post-1.html"
   },
   {
-    title: "Concept Art Progress",
-    date: "March 8, 2026",
-    tags: ["Concept Art", "Update", "Storyboard"],
-    image: "assets/newsimage2.png",
-    previewText: "This post can describe visual development, early sketches, and design choices. Keep writing naturally here. The script will cut this down to the first 350 characters and add dots at the end, so readers know there is more to read when they open the full post page.",
+    title: "Example Post 2",
+    date: "April 10, 2026",
+    tags: ["Update", "Scripts", "Storyboard"],
+    image: "assets/newsimage1.png",
+    previewText: "This is the preview text of a post that goes on a half-post.",
     link: "posts/post-2.html"
   },
   {
-    title: "Storyboard Review",
-    date: "March 15, 2026",
-    tags: ["Storyboard", "Scripts", "Update"],
-    image: "assets/frontpageimage.png",
-    previewText: "Use this area for the first section of your article. You can summarize the story direction, the visual beats, or how the sequence changed during planning. This preview text helps visitors decide whether they want to open the full post and continue reading the complete article.",
+     title: "Example Post 3",
+    date: "April 11, 2026",
+    tags: ["Update", "Scripts", "Storyboard"],
+    image: "assets/newsimage1.png",
+    previewText: "This is the preview text of a post that goes on a half-post.",
     link: "posts/post-3.html"
   },
   {
-    title: "Project Release Notes",
-    date: "March 22, 2026",
-    tags: ["Project Release", "Update", "Concept Art"],
-    image: "assets/frontpageimage.png",
-    previewText: "This preview can introduce a major release, a completed milestone, or a public update. The full post will hold the rest of the story, including screenshots, extra paragraphs, and any links or images that belong in the complete version of the article.",
+    title: "Example Post 4",
+    date: "April 12, 2026",
+    tags: ["Update", "Scripts", "Storyboard"],
+    image: "assets/newsimage1.png",
+    previewText: "This is the preview text of a post that goes on a half-post.",
     link: "posts/post-4.html"
   },
   {
-    title: "Writing the Next Script",
-    date: "March 29, 2026",
-    tags: ["Scripts", "Storyboard", "Project Release"],
+     title: "Example Post 5",
+    date: "April 13, 2026",
+    tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
-    previewText: "This fifth sample post is here so pagination works right away. Because the blog page shows four posts at a time, adding a fifth post lets you test the next page button immediately and confirm that your blog system is working the way you want it to.",
+    previewText: "This is the preview text of a post that goes on a half-post.",
     link: "posts/post-5.html"
   }
 ];
