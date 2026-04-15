@@ -7,6 +7,7 @@
 <body>
   <div class="page">
     <div class="main">
+
       <header class="top-bar">
         <div class="brand">
           <h1>Shearwater Productions</h1>
@@ -21,11 +22,47 @@
         </nav>
       </header>
 
-      <section>
-        <h2>Blog</h2>
-        <p>This is the Blog page.</p>
+      <section class="blog-layout">
+        <aside class="blog-sidebar">
+          <div class="sidebar-box">
+            <h2>Search</h2>
+            <input type="text" id="searchInput" placeholder="Search posts...">
+          </div>
+
+          <div class="sidebar-box">
+            <h2>Sort By Tags</h2>
+            <div class="tag-filter-list">
+              <button class="tag-filter active" data-tag="All">All</button>
+              <button class="tag-filter" data-tag="Update">Update</button>
+              <button class="tag-filter" data-tag="Scripts">Scripts</button>
+              <button class="tag-filter" data-tag="Storyboard">Storyboard</button>
+              <button class="tag-filter" data-tag="Concept Art">Concept Art</button>
+              <button class="tag-filter" data-tag="Project Release">Project Release</button>
+            </div>
+          </div>
+
+          <div class="sidebar-box">
+            <h2>Links</h2>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+          </div>
+        </aside>
+
+        <main class="blog-main-content">
+          <div id="postsContainer"></div>
+
+          <div class="blog-pagination">
+            <button id="prevPageBtn">Previous Page</button>
+            <span id="pageIndicator"></span>
+            <button id="nextPageBtn">Next Page</button>
+          </div>
+        </main>
       </section>
+
     </div>
   </div>
+
+  <script src="assets/blog.js"></script>
 </body>
 </html>
