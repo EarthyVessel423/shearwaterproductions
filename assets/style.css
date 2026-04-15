@@ -148,8 +148,8 @@ body {
 
 /* BASE BUTTON STYLE */
 .btn {
-  width: 220px;            /* 👈 forces same width */
-  height: 70px;            /* 👈 forces same height */
+  width: 320px;            /* 👈 forces same width */
+  height: 100px;            /* 👈 forces same height */
   display: flex;
   align-items: center;
   justify-content: center;
