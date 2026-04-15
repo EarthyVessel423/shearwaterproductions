@@ -3,7 +3,7 @@ const POSTS_PER_PAGE = 4;
 const blogPosts = [
   {
     title: "Example Post 1",
-    date: "April 9, 2026",
+    date: "2026-03-09",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
     previewText: "This is the preview text of a post that goes on a half-post.",
@@ -11,7 +11,7 @@ const blogPosts = [
   },
   {
     title: "Example Post 2",
-    date: "April 10, 2026",
+    date: "2026-03-10",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
     previewText: "This is the preview text of a post that goes on a half-post.",
@@ -19,7 +19,7 @@ const blogPosts = [
   },
   {
      title: "Example Post 3",
-    date: "April 11, 2026",
+    date: "2025-03-10",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
     previewText: "This is the preview text of a post that goes on a half-post.",
@@ -27,7 +27,7 @@ const blogPosts = [
   },
   {
     title: "Example Post 4",
-    date: "April 12, 2026",
+    date: "2026-01-01",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
     previewText: "This is the preview text of a post that goes on a half-post.",
@@ -35,7 +35,7 @@ const blogPosts = [
   },
   {
      title: "Example Post 5",
-    date: "April 13, 2026",
+    date: "2027-03-14",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
     previewText: "This is the preview text of a post that goes on a half-post.",
