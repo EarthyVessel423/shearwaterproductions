@@ -55,20 +55,22 @@ function createExcerpt(text, limit = 350) {
 }
 
 function getFilteredPosts() {
-  return blogPosts.filter(post => {
-    const matchesTag =
-      selectedTag === "All" || post.tags.includes(selectedTag);
+  return blogPosts
+    .filter(post => {
+      const matchesTag =
+        selectedTag === "All" || post.tags.includes(selectedTag);
 
-    const combinedText = (
-      post.title + " " +
-      post.previewText + " " +
-      post.tags.join(" ")
-    ).toLowerCase();
+      const combinedText = (
+        post.title + " " +
+        post.previewText + " " +
+        post.tags.join(" ")
+      ).toLowerCase();
 
-    const matchesSearch = combinedText.includes(searchTerm.toLowerCase());
+      const matchesSearch = combinedText.includes(searchTerm.toLowerCase());
 
-    return matchesTag && matchesSearch;
-  });
+      return matchesTag && matchesSearch;
+    })
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 function renderPosts() {
