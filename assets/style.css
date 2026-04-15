@@ -194,7 +194,7 @@ body {
   opacity: 0.8;     /* 👈 softer look */
 }
 .section-divider-mini {
-  width: 80%;              /* 👈 spans most of the width */
+  width: 60%;              /* 👈 spans most of the width */
   height: 1px;
   background: #333;
   border: none;
