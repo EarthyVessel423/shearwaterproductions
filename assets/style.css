@@ -10,35 +10,42 @@ body {
 .page {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 40px;
 }
 
 /* MAIN CONTENT COLUMN */
 .main {
-  width: 1200px;
+  width: 1300px;
   max-width: calc(100% - 40px);
-  background: #051836;
+  background: #001a45;
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 8px;
+
+  border-radius: 0 0 8px 8px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .top-bar {
+  width: 1300px;
+  max-width: calc(100% - 40px);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 
+  padding: 30px 20px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+
+  background: #00245c;
+  border-radius: 6px 6px 0 0;
   border-bottom: 1px solid #333;
 
-  padding: 30px 20px;   /* 👈 makes header taller */
-  margin-bottom: 30px;
-
-  background: #011b45;
-  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 /* BRAND AREA */
