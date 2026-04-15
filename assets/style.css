@@ -18,7 +18,7 @@ body {
 .main {
   width: 1200px;
   max-width: calc(100% - 40px);
-  background: #1d2e47;
+  background: #041b3d;
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
