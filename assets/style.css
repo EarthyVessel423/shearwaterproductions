@@ -25,7 +25,9 @@ body {
   box-sizing: border-box;
 
   border-radius: 0 0 8px 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: none;
+  margin-top: 0;
+
 }
 
 .top-bar {
