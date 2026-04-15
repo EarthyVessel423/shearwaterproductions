@@ -3,7 +3,7 @@ const POSTS_PER_PAGE = 4;
 const blogPosts = [
   {
     title: "Example Post 1",
-    date: "2026-03-09",
+    date: "April 13, 2027",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
     previewText: "This is the preview text of a post that goes on a half-post.",
