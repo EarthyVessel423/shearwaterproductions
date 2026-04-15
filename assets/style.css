@@ -45,7 +45,7 @@ body {
   border-radius: 6px 6px 0 0;
   border-bottom: 1px solid #333;
 
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  box-shadow: none;
 }
 
 /* BRAND AREA */
