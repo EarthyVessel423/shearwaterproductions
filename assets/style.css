@@ -193,16 +193,15 @@ body {
 
   opacity: 0.8;     /* 👈 softer look */
 }
-.section-divider mini {
+.section-divider-mini {
+  width: 50%;              /* 👈 half the length */
+  height: 1px;
+  background: #333;
   border: none;
-  border-top: 1px solid #333;
-
-  margin: 20px 0;   /* 👈 smaller spacing */
-  width: 100%;
-
-  opacity: 0.6;     /* 👈 softer look */
+  margin: 40px auto;       /* keeps it centered */
 }
-/* NEWS SECTION */
+
+                                                                                        /* NEWS SECTION */
 .news-section {
   display: flex;
   flex-direction: column;
