@@ -73,6 +73,14 @@ function getFilteredPosts() {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+function formatDisplayDate(dateString) {
+  return new Date(dateString + "T00:00:00").toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  });
+}
+
 function renderPosts() {
   const postsContainer = document.getElementById("postsContainer");
   const pageIndicator = document.getElementById("pageIndicator");
@@ -85,7 +93,52 @@ function renderPosts() {
   if (currentPage > totalPages) {
     currentPage = totalPages;
   }
+function renderHomeBlogPreview() {
+  const latestPostFeature = document.getElementById("latestPostFeature");
+  const latestPostGrid = document.getElementById("latestPostGrid");
 
+  if (!latestPostFeature || !latestPostGrid) {
+    return;
+  }
+
+  const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  if (sortedPosts.length === 0) {
+    latestPostFeature.innerHTML = `
+      <p>No blog posts yet.</p>
+    `;
+    latestPostGrid.innerHTML = "";
+    return;
+  }
+
+  const newestPost = sortedPosts[0];
+  const nextThreePosts = sortedPosts.slice(1, 4);
+
+  latestPostFeature.innerHTML = `
+    <article class="latest-feature-post">
+      <div class="latest-feature-image">
+        <a href="${newestPost.link}">
+          <img src="${newestPost.image}" alt="${newestPost.title}">
+        </a>
+      </div>
+
+      <div class="latest-feature-text">
+        <div class="latest-feature-date">Latest Post • ${formatDisplayDate(newestPost.date)}</div>
+        <h3><a href="${newestPost.link}">${newestPost.title}</a></h3>
+        <p>${createExcerpt(newestPost.previewText, 220)}</p>
+      </div>
+    </article>
+  `;
+
+  latestPostGrid.innerHTML = nextThreePosts.map(post => `
+    <article class="latest-grid-item">
+      <a href="${post.link}">
+        <img src="${post.image}" alt="${post.title}">
+        <h4>${post.title}</h4>
+      </a>
+    </article>
+  `).join("");
+}
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
   const pagePosts = filteredPosts.slice(startIndex, endIndex);
@@ -118,7 +171,7 @@ function renderPosts() {
 
           <p>${createExcerpt(post.previewText)}</p>
 
-          <div class="blog-preview-date">${post.date}</div>
+          <div class="blog-preview-date">${formatDisplayDate(post.date)}</div>
         </div>
       `;
 
@@ -171,6 +224,12 @@ function setupBlogControls() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  setupBlogControls();
-  renderPosts();
+  const postsContainer = document.getElementById("postsContainer");
+
+  if (postsContainer) {
+    setupBlogControls();
+    renderPosts();
+  }
+
+  renderHomeBlogPreview();
 });
