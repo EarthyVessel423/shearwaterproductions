@@ -526,18 +526,19 @@ body {
 .latest-feature-post {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 40px;
+  margin: 0 auto 40px auto;
+  max-width: 950px;
 }
 
 .latest-feature-image {
-  width: 260px;
+  width: 320px;
   flex-shrink: 0;
 }
 
 .latest-feature-image img {
   width: 100%;
-  height: 180px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 8px;
   display: block;
@@ -577,15 +578,17 @@ body {
 
 .latest-post-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
+  gap: 24px;
   margin-top: 30px;
 }
 
+
 .latest-grid-item {
-  flex: 1;
+  width: 220px;
   text-align: center;
 }
+
 
 .latest-grid-item a {
   text-decoration: none;
@@ -602,8 +605,8 @@ body {
 }
 
 .latest-grid-item h4 {
-  margin: 0;
-  font-size: 1.4rem;
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
 }
 
 .latest-grid-item a:hover h4 {
@@ -612,4 +615,5 @@ body {
 .latest-grid-date {
   font-size: 0.85rem;
   color: #aaa;
+  text-align: center;
 }
