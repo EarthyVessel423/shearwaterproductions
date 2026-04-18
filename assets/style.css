@@ -593,7 +593,7 @@ body {
 }
 
 .latest-grid-item img {
-  width: 80%;
+  width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 8px;
