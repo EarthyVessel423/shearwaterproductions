@@ -18,7 +18,7 @@ const blogPosts = [
     link: "posts/post-2.html"
   },
   {
-     title: "Example Post 3",
+    title: "Example Post 3",
     date: "2025-03-10",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
@@ -34,7 +34,7 @@ const blogPosts = [
     link: "posts/post-4.html"
   },
   {
-     title: "Example Post 5",
+    title: "Example Post 5",
     date: "2027-03-14",
     tags: ["Update", "Scripts", "Storyboard"],
     image: "assets/newsimage1.png",
@@ -52,6 +52,14 @@ function createExcerpt(text, limit = 350) {
     return text;
   }
   return text.slice(0, limit).trim() + "...";
+}
+
+function formatDisplayDate(dateString) {
+  return new Date(dateString + "T00:00:00").toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  });
 }
 
 function getFilteredPosts() {
@@ -73,19 +81,15 @@ function getFilteredPosts() {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
-function formatDisplayDate(dateString) {
-  return new Date(dateString + "T00:00:00").toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric"
-  });
-}
-
 function renderPosts() {
   const postsContainer = document.getElementById("postsContainer");
   const pageIndicator = document.getElementById("pageIndicator");
   const prevPageBtn = document.getElementById("prevPageBtn");
   const nextPageBtn = document.getElementById("nextPageBtn");
+
+  if (!postsContainer || !pageIndicator || !prevPageBtn || !nextPageBtn) {
+    return;
+  }
 
   const filteredPosts = getFilteredPosts();
   const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
@@ -93,52 +97,7 @@ function renderPosts() {
   if (currentPage > totalPages) {
     currentPage = totalPages;
   }
-function renderHomeBlogPreview() {
-  const latestPostFeature = document.getElementById("latestPostFeature");
-  const latestPostGrid = document.getElementById("latestPostGrid");
 
-  if (!latestPostFeature || !latestPostGrid) {
-    return;
-  }
-
-  const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
-
-  if (sortedPosts.length === 0) {
-    latestPostFeature.innerHTML = `
-      <p>No blog posts yet.</p>
-    `;
-    latestPostGrid.innerHTML = "";
-    return;
-  }
-
-  const newestPost = sortedPosts[0];
-  const nextThreePosts = sortedPosts.slice(1, 4);
-
-  latestPostFeature.innerHTML = `
-    <article class="latest-feature-post">
-      <div class="latest-feature-image">
-        <a href="${newestPost.link}">
-          <img src="${newestPost.image}" alt="${newestPost.title}">
-        </a>
-      </div>
-
-      <div class="latest-feature-text">
-        <div class="latest-feature-date">Latest Post • ${formatDisplayDate(newestPost.date)}</div>
-        <h3><a href="${newestPost.link}">${newestPost.title}</a></h3>
-        <p>${createExcerpt(newestPost.previewText, 220)}</p>
-      </div>
-    </article>
-  `;
-
-  latestPostGrid.innerHTML = nextThreePosts.map(post => `
-    <article class="latest-grid-item">
-      <a href="${post.link}">
-        <img src="${post.image}" alt="${post.title}">
-        <h4>${post.title}</h4>
-      </a>
-    </article>
-  `).join("");
-}
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
   const pagePosts = filteredPosts.slice(startIndex, endIndex);
@@ -184,11 +143,60 @@ function renderHomeBlogPreview() {
   nextPageBtn.disabled = currentPage === totalPages;
 }
 
+function renderHomeBlogPreview() {
+  const latestPostFeature = document.getElementById("latestPostFeature");
+  const latestPostGrid = document.getElementById("latestPostGrid");
+
+  if (!latestPostFeature || !latestPostGrid) {
+    return;
+  }
+
+  const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  if (sortedPosts.length === 0) {
+    latestPostFeature.innerHTML = `<p>No blog posts yet.</p>`;
+    latestPostGrid.innerHTML = "";
+    return;
+  }
+
+  const newestPost = sortedPosts[0];
+  const nextThreePosts = sortedPosts.slice(1, 4);
+
+  latestPostFeature.innerHTML = `
+    <article class="latest-feature-post">
+      <div class="latest-feature-image">
+        <a href="${newestPost.link}">
+          <img src="${newestPost.image}" alt="${newestPost.title}">
+        </a>
+      </div>
+
+      <div class="latest-feature-text">
+        <div class="latest-feature-date">Latest Post • ${formatDisplayDate(newestPost.date)}</div>
+        <h3><a href="${newestPost.link}">${newestPost.title}</a></h3>
+        <p>${createExcerpt(newestPost.previewText, 220)}</p>
+      </div>
+    </article>
+  `;
+
+  latestPostGrid.innerHTML = nextThreePosts.map(post => `
+    <article class="latest-grid-item">
+      <a href="${post.link}">
+        <img src="${post.image}" alt="${post.title}">
+        <h4>${post.title}</h4>
+      </a>
+    </article>
+  `).join("");
+}
+
 function setupBlogControls() {
   const searchInput = document.getElementById("searchInput");
   const tagButtons = document.querySelectorAll(".tag-filter");
   const prevPageBtn = document.getElementById("prevPageBtn");
   const nextPageBtn = document.getElementById("nextPageBtn");
+
+  if (!searchInput || !prevPageBtn || !nextPageBtn) {
+    return;
+  }
 
   searchInput.addEventListener("input", (event) => {
     searchTerm = event.target.value;
@@ -224,12 +232,7 @@ function setupBlogControls() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const postsContainer = document.getElementById("postsContainer");
-
-  if (postsContainer) {
-    setupBlogControls();
-    renderPosts();
-  }
-
+  setupBlogControls();
+  renderPosts();
   renderHomeBlogPreview();
 });
