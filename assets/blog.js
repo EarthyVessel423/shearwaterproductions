@@ -179,13 +179,14 @@ function renderHomeBlogPreview() {
   `;
 
   latestPostGrid.innerHTML = nextThreePosts.map(post => `
-    <article class="latest-grid-item">
-      <a href="${post.link}">
-        <img src="${post.image}" alt="${post.title}">
-        <h4>${post.title}</h4>
-      </a>
-    </article>
-  `).join("");
+  <article class="latest-grid-item">
+    <a href="${post.link}">
+      <img src="${post.image}" alt="${post.title}">
+      <h4>${post.title}</h4>
+      <div class="latest-grid-date">${formatDisplayDate(post.date)}</div>
+    </a>
+  </article>
+`).join("");
 }
 
 function setupBlogControls() {
