@@ -593,12 +593,12 @@ body {
 }
 
 .latest-grid-item img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 8px;
   display: block;
-  margin: 0 auto 12px auto;
+  margin-bottom: 12px;
 }
 
 .latest-grid-item h4 {
