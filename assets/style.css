@@ -24,7 +24,7 @@ body {
 .main {
   width: 1300px;
   max-width: calc(100% - 40px);
-  background: #002766;
+  background: #00121c;
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
@@ -48,7 +48,7 @@ body {
   box-sizing: border-box;
   margin-bottom: 0;
 
-  background: #033b94;
+  background: #005a8f;
   border-radius: 6px 6px 0 0;
   border-bottom: 1px solid #333;
 
