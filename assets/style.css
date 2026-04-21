@@ -139,6 +139,7 @@ body {
 }
 
 .nav-menu a {
+  font-family: "LiberationSans", Arial, sans-serif;
   color: white;
   text-decoration: none;
   font-size: 1.8rem;   /* 👈 bigger nav text */
