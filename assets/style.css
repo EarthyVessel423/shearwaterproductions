@@ -2,35 +2,35 @@
 
 @font-face {
   font-family: "MagicalNight";
-  src: url("fonts/MagicalNight.ttf") format("truetype");
+  src: url("font/MagicalNight.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "LiberationSans";
-  src: url("fonts/LiberationSans-Regular.ttf") format("truetype");
+  src: url("font/LiberationSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "LiberationSans";
-  src: url("fonts/LiberationSans-Bold.ttf") format("truetype");
+  src: url("font/LiberationSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "LiberationSans";
-  src: url("fonts/LiberationSans-Italic.ttf") format("truetype");
+  src: url("font/LiberationSans-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "LiberationSans";
-  src: url("fonts/LiberationSans-BoldItalic.ttf") format("truetype");
+  src: url("font/LiberationSans-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
@@ -52,6 +52,7 @@ h4,
 h5,
 h6 {
   font-family: "LiberationSans", Arial, sans-serif;
+  color: white;
 }
 /* FULL PAGE BACKGROUND */
 body {
@@ -120,8 +121,9 @@ body {
   margin: 0;
   font-family: "MagicalNight", Arial, sans-serif;
   letter-spacing: 1px;
-  font-size: 2.3rem;   /* 👈 bigger title */
+  font-size: 2.3rem;
   white-space: nowrap;
+  color: white;
 }
 
 /* LOGO */
