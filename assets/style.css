@@ -34,6 +34,25 @@
   font-weight: bold;
   font-style: italic;
 }
+
+body,
+p,
+a,
+li,
+span,
+div,
+button,
+input,
+textarea,
+select,
+label,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "LiberationSans", Arial, sans-serif;
+}
 /* FULL PAGE BACKGROUND */
 body {
   margin: 0;
