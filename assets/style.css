@@ -118,7 +118,7 @@ body {
 
 .brand h1 {
   margin: 0;
-  font-family: "Magical Night", cursive;
+  font-family: "MagicalNight", Arial, sans-serif;
   letter-spacing: 1px;
   font-size: 2.3rem;   /* 👈 bigger title */
   white-space: nowrap;
