@@ -728,3 +728,73 @@ body {
   color: white;
   letter-spacing: 1px;
 }
+/* PASSWORD PAGE */
+.password-page {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.password-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 0 40px 0;
+  text-align: center;
+  color: white;
+}
+
+.password-form {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.password-input {
+  flex: 1;
+  height: 72px;
+  padding: 0 24px;
+  font-size: 1.5rem;
+  font-family: "LiberationSans", Arial, sans-serif;
+  border: 2px solid #ffffff55;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.password-input:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+
+.password-submit {
+  width: 72px;
+  height: 72px;
+  border: 2px solid #ffffff55;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-submit:hover {
+  background: #e6e6e6;
+}
+
+.password-message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ffb3b3;
+  min-height: 24px;
+}
