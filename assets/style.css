@@ -683,12 +683,11 @@ body {
 }
 /* FOOTER */
 .site-footer {
-  width: 1300px;
-  max-width: calc(100% - 40px);
+  width: calc(100% + 40px);
+  margin: 60px -20px -20px -20px;
   box-sizing: border-box;
 
   background: #005a8f;
-  margin-top: 0;
   padding: 18px 28px;
 
   display: flex;
