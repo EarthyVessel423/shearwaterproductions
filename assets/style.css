@@ -681,3 +681,51 @@ body {
   color: #aaa;
   text-align: center;
 }
+/* FOOTER */
+.site-footer {
+  width: 1300px;
+  max-width: calc(100% - 40px);
+  box-sizing: border-box;
+
+  background: #005a8f;
+  margin-top: 0;
+  padding: 18px 28px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 40px 40px 0 0;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-site-name {
+  font-family: "MagicalNight", Arial, sans-serif;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 1px;
+}
