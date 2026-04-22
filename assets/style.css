@@ -729,6 +729,7 @@ body {
 }
 /* PASSWORD PAGE */
 .password-page {
+  min-height: calc(100vh - 260px);
   display: flex;
   flex-direction: column;
   justify-content: center;
