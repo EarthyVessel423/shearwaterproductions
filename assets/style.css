@@ -82,18 +82,18 @@ body {
   max-width: calc(100% - 40px);
   background: #062c40;
   padding: 20px;
-  padding-bottom: 60px; /* 👈 ADD THIS */
-
+  padding-bottom: 60px;
   box-sizing: border-box;
 
   border-radius: 0 0 8px 8px;
-  box-shadow: none;
-  margin-top: 0;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* 👈 NEW */
 
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
 .top-bar {
   width: 1300px;
   max-width: calc(100% - 40px);
