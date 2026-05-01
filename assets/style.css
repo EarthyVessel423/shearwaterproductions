@@ -82,6 +82,8 @@ body {
   max-width: calc(100% - 40px);
   background: #062c40;
   padding: 20px;
+  padding-bottom: 60px; /* 👈 ADD THIS */
+
   box-sizing: border-box;
 
   border-radius: 0 0 8px 8px;
