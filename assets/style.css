@@ -347,7 +347,7 @@ body {
 .blog-sidebar {
   width: 260px;
   flex-shrink: 0;
-  border-right: 1px solid #333;
+  border-right: 1px solid #ffffff;
   padding-right: 20px;
 }
 
@@ -415,7 +415,7 @@ body {
   display: flex;
   gap: 25px;
   padding: 25px 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffffff;
 }
 
 .blog-preview-image {
