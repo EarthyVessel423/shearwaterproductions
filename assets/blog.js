@@ -5,7 +5,7 @@ const blogPosts = [
   title: "Welcome to the Shearwater Blog",
   date: "2026-06-07",
   tags: ["Update"],
-  image: "assets/firstblogimage.png",
+  image: "assets/blogimage1_post1.png",
   previewText: "Hello and Welcome to the Shearwater blog! This is the first blog post after migrating from the old website...",
   link: "posts/post-1.html"
 }
