@@ -2,13 +2,13 @@ const POSTS_PER_PAGE = 4;
 
 const blogPosts = [
   {
-    title: "Example Post 1",
-    date: "2026-03-11",
-    tags: ["Update", "Scripts", "Storyboard"],
-    image: "assets/newsimage1.png",
-    previewText: "This is the preview text of a post that goes on a half-post.",
-    link: "posts/post-1.html"
-  }
+  title: "Welcome to the Shearwater Blog",
+  date: "2026-06-07",
+  tags: ["Update"],
+  image: "assets/firstblogimage.png",
+  previewText: "Hello and Welcome to the Shearwater blog! This is the first blog post after migrating from the old website...",
+  link: "posts/post-1.html"
+}
 ];
 
 let currentPage = 1;
